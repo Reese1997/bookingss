@@ -165,8 +165,8 @@ ul a:hover::after {
 }
 .hero-header {
   color: white;
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 30px;
+  line-height: 40px;
 }
 .hero-button {
   position: relative;
