@@ -35,14 +35,13 @@
   </div>
 </div>
 
-  <Footer />
+ 
   </section>
 </template>
 
 <script>
-import Footer from "../components/Footer.vue";
 export default {
-  components: { Footer },
+  components: { },
   data() {
     return {
       email: "",

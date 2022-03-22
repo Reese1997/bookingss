@@ -105,7 +105,10 @@ export default {
 
 <style>
 .footer{
-	padding: 60px 0;
+	padding-top: 60px;
+	padding-right: 0%;
+	padding-bottom: 0%;
+	padding-left: 0%;
     width: 100%;
     background: #a50505;
     color: #fff;

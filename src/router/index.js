@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Services from '../views/Services.vue'
-import Register from '../views/Register.vue'
-import Login from '../views/Login.vue'
-import Contact from '../views/Contact.vue'
-import Bookings from '../views/Bookings.vue'
+import Home from '../components/Home.vue'
+import About from '../components/About.vue'
+import Services from '../components/Services.vue'
+import Register from '../components/Register.vue'
+import Login from '../components/Login.vue'
+import Contact from '../components/Contact.vue'
+import Bookings from '../components/Bookings.vue'
 
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
