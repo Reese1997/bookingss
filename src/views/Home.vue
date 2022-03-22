@@ -1,49 +1,41 @@
 <template>
-  <header>
-  <nav class="navbar ">
-    <a href="#"><img class="logo" src="../assets/true.png" alt="truecadence logo"></a>
-    <ul id="ul-navigation" class="nav-ul" data-visible="false">
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Home'}">Home</router-link></li>
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'About'}">About</router-link></li>
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Services'}">Services</router-link></li>
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Register'}">Register</router-link></li>
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Login'}">Log in</router-link></li>
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Contact'}">Contact</router-link></li>
+  <div class="home">
+   
+<div class="hero-background">
+  <div class="hero-section-wrapper">
+    <p class="hero-text">Current Mission</p>
+    <h1 class="hero-header animate__animated animate__backInRight">Get Fit
+<br> Stay consistent.<br> Feel good.</h1>
+<!-- <br> Perform at your best.</h1> -->
+    <button class="hero-button">
+      <span>Book Now</span>
+      </button>
+       <button class="hero-button">
+      <span>Online class</span>
+      </button>
+  </div>
+</div>
+<div class="testing">
+<button>
+<router-link :to="{name:'Bookings'}" class="nav-link"> bookings</router-link>
+</button>
+</div>
+  </div>
 
-    </ul>
-    
-    <button class="mobile-toggle" aria-controls="ul-navigation" aria-expanded="false">
-      <span class="sr-only">Menu</span>
-    </button>
-  </nav>
-</header>
-    
 
-
-
-
+  <div class="quote">
+<p>LIMITS<br> 
+ONLY exist in the MIND...</p>
+</div>
 </template>
 
 <script>
+
+
 export default {
-  data() {
-    return {
-      isActive: false,
-    };
-  },
-  methods: {
-    toggleNav() {
-      this.isActive = !this.isActive;
-    },
-    logout() {
-      localStorage.clear();
-      this.toggleNav;
-    },
-  },
-};
-
+  
+}
 </script>
-
 <style>
 * {
   font-family: 'Bebas Neue', cursive;
@@ -89,9 +81,7 @@ p:after  { content: close-quote; }
     background-position-x: center;
   }
 }
-nav{
-  z-index: 100;
-}
+
 .navbar {
   width: 100%;
   max-width:100%;

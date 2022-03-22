@@ -1,4 +1,5 @@
 <template>
+<section class="services">
   <div class="py-24 bg-white">
   <div class="text-center mb-24">
     <p class="mt-4 text-sm leading-7 text-gray-500 font-regular">
@@ -128,7 +129,7 @@
   <img src="http://codenawis.com/componentity/wp-content/uploads/2020/08/logo-componentity-%E2%80%93-9.png" class="w-48 mx-auto my-5">
 </a>
 
-
+</section>
 </template>
 
 <script>
@@ -138,6 +139,9 @@ export default {
 </script>
 
 <style>
+.services {
+  min-height: 100vh
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {

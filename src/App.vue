@@ -15,8 +15,9 @@ export default {
 
 <style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+ font-family: 'Bebas Neue', cursive;
+font-family: 'League Gothic', sans-serif;
+font-family: 'Smooch Sans', sans-serif;  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
