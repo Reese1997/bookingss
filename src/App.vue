@@ -24,7 +24,7 @@ import Footer from './components/Footer.vue'
 
 export default {
   name: "App",
-  components: { Navbar, Home, About, Services, Register, Login,
+  components: { Navbar, About, Services, Register, Login,
     Contact, Bookings, Footer
   }
 }

@@ -1,6 +1,5 @@
 <template>
-  <div class="home">
-   
+  <div class="home"> 
 <div class="hero-background">
   <div class="hero-section-wrapper">
     <p class="hero-text">Current Mission</p>
@@ -24,18 +23,38 @@
 
 
   <div class="quote">
-<p>LIMITS<br> 
+    <div class="row">
+					<div class="col-md-8 col-xs-12">
+<p>LIMITS 
 ONLY exist in the MIND...</p>
 </div>
+</div><!-- end col-md-12-->
+					<div class="col-md-4 col-xs-12">
+						
+					</div><!-- end col-md-4 -->
+				</div><!--end row -->
+
+<div class="row">
+					<div class="col-md-8 col-xs-12">
+
+            </div><!-- end col-md-12-->
+					<div class="col-md-4 col-xs-12">
+						
+					</div><!-- end col-md-4 -->
+				</div><!--end row -->
 </template>
 
 <script>
-
-
 export default {
-  
-}
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
+  },
+};
 </script>
+
 <style>
 * {
   font-family: 'Bebas Neue', cursive;

@@ -9,7 +9,8 @@
 					<div class="footer-title m-t-5 m-b-20 p-b-8">
 						About us
 					</div>	
-					<p class="white-text">
+					<p class="white-text" >It's not how good you are, 
+						it's how good you want to be.
 					</p>
 				</div>
 				<div class="col-md-3 m-b-30">
@@ -90,7 +91,7 @@
 		</div>
 	</footer>
 	<div class="footer-bottom">
-		Copyright © 2017, All Rights Reserved
+		Copyright TRUECADENCE© 2022, All Rights Reserved
 	</div>
     	</div>
 	</div>

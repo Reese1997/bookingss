@@ -1,6 +1,6 @@
 <template>
   <header>
-  <nav class="navbar ">
+  <nav class="navbar" fixed="top">
     <a href="#"><img class="logo" src="../assets/true.png" alt="truecadence logo"></a>
     <ul id="ul-navigation" class="nav-ul" data-visible="false">
       <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Home'}">Home</router-link></li>
@@ -9,7 +9,6 @@
       <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Register'}">Register</router-link></li>
       <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Login'}">Log in</router-link></li>
       <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Contact'}">Contact</router-link></li>
-
     </ul>
     
     <button class="mobile-toggle" aria-controls="ul-navigation" aria-expanded="false">
@@ -17,10 +16,6 @@
     </button>
   </nav>
 </header>
-    
-
-
-
 
 </template>
 
@@ -91,12 +86,13 @@ p:after  { content: close-quote; }
 }
 nav{
   z-index: 100;
+  position: fixed;
 }
 .navbar {
   width: 100%;
   max-width:100%;
   min-height: 10vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: transparent;
   display: flex;

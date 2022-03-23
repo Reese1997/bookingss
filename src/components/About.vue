@@ -11,7 +11,7 @@
 			</div><!--end container-->
 		
 		<section id="about-me">
-			<div class="container">
+			<div class="container animate__animated animate__zoomIn">
 				<div class="row">
 					<div class="col-md-12">
 						<div id="about-me-box">
@@ -24,7 +24,7 @@
                   <div class="text-center"><h2>About Me</h2></div>
 									<p class="about-me">Hi! My name is Karina and this is True Cadence.
                     I am a qualified Personal Trainer and Sports Conditioning Coach.
-                     I am an passionate avid Elite Cyclist, and I participate in local races.
+                     I am a passionate Elite Cyclist, and I participate in local races.
                      I am passionate about getting an aspiring cyclist to where they want to be. 
                       I hope you find something worth enjoying. </p>
 								</div><!-- end col-md-5-->
@@ -34,9 +34,6 @@
 				</div><!-- end row-->
 			</div><!-- end container -->
 		</section>
-		
-	
-
 </template>
 
 <script>

@@ -8,7 +8,7 @@
 <p class="par">Unlock and perform at you TRUE potential.
 Hands on coaching, training plans and resources to
    take your cycling to a whole new level, whether
-    you are a beginner or aspiring pro-cyclist!</p>
+    you are a beginner or an aspiring pro-cyclist!</p>
         </div>
       
       <div class="col-sm-5">
