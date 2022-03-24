@@ -4,10 +4,15 @@
           <label class="h4 text-light">How can we help?</label>
               <h1 class="log">Lets get in touch:</h1>
     <br /><br />
-    <input type="First name" placeholder="First Name" /><br /><br />
-    <input type="Last name" placeholder="Last Name" /><br /><br />
-    <input type="E-mail" placeholder="E-mail" /><br /><br />
-    <input type="Tel" placeholder="Tel" /><br /><br />
+    <label>First Name</label>
+    <input type="name" required v-model="name">
+
+     <label>Last Name</label>
+    <input type="last" required v-model="last">
+
+     <label>Contact</label>
+    <input type="contact" required v-model="contact">
+
     <router-link :to="{ path: '/contact/' }"><button>LOG IN</button></router-link>
   </form>
 
@@ -18,9 +23,10 @@
 export default {
   data() {
     return {
-      contact: null,
       name: "",
+      last: "",
       email: "",
+      contact: null,
       message: "",
     };
   },

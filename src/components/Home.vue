@@ -1,4 +1,6 @@
 <template>
+	<div class="col-md-8 col-xs-12">
+
   <div class="home"> 
 <div class="hero-background">
   <div class="hero-section-wrapper">
@@ -14,44 +16,29 @@
       </button>
   </div>
 </div>
-<div class="testing">
+  </div>
+
+  					<!-- <div class="col-md-8 col-xs-12">
+	<img class="max-width-xs" src="https://flyclipart.com/art-black-and-white-kanye-kanye-west-graphic-transparent-graphic-kanye-face-png-902217" />
+								</div>end col-md-7 -->
+<!-- <div class="testing">
 <button>
 <router-link :to="{name:'Bookings'}" class="nav-link"> bookings</router-link>
 </button>
-</div>
+</div> -->
   </div>
 
 
   <div class="quote">
-    <div class="row">
-					<div class="col-md-8 col-xs-12">
 <p>LIMITS 
 ONLY exist in the MIND...</p>
 </div>
-</div><!-- end col-md-12-->
-					<div class="col-md-4 col-xs-12">
-						
-					</div><!-- end col-md-4 -->
-				</div><!--end row -->
 
-<div class="row">
-					<div class="col-md-8 col-xs-12">
-
-            </div><!-- end col-md-12-->
-					<div class="col-md-4 col-xs-12">
-						
-					</div><!-- end col-md-4 -->
-				</div><!--end row -->
 </template>
 
 <script>
 export default {
-  components: {
-    Carousel,
-    Slide,
-    Pagination,
-    Navigation,
-  },
+ 
 };
 </script>
 

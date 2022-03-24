@@ -4,12 +4,17 @@
     <div class="row no-margin">
       <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="content">
-<h1>Book Your Time Slot Now and save your time</h1>
-<p class="par">Unlock and perform at you TRUE potential.
-Hands on coaching, training plans and resources to
-   take your cycling to a whole new level, whether
-    you are a beginner or an aspiring pro-cyclist!</p>
+          <h1>Book Your Time Slot Now and save your time</h1>
+          <p class="par">Unlock and perform at you TRUE potential.
+            Hands on coaching, training plans and resources to
+            take your cycling to a whole new level, whether
+            you are a beginner or an aspiring pro-cyclist!
+          </p>
         </div>
+      </div>
+    </div>
+  </div>  
+</section>
       
       <div class="col-sm-5">
         <div class="form-data">
@@ -21,57 +26,98 @@ Hands on coaching, training plans and resources to
           </div>
         </div>
       </div>
-</div>
 
 
 <div class="col-lg-6 col-md-6 col-sm-12">
 <form @submit.prevent="handleSubmit">
           <label class="h4 text-dark">Let's Get Started:</label>
-              <h1 class="sign">Sign Up:</h1>
+              <h1 class="sign">Register:</h1>
     <br /><br />
-    <input type="First name" placeholder="First Name" /><br /><br />
-    <input type="Last name" placeholder="Last Name" /><br /><br />
-    <input type="E-mail" placeholder="E-mail" /><br /><br />
-    <!-- <input type="Tel" placeholder="Tel" /><br /><br /> -->
-    <router-link :to="{ path: '/login/' }"><button>Register</button></router-link>
-    <!-- <button class="but" type="submit ">REGISTER!</button> --> -->
-  </form>
+    <label>Email</label>
+    <input type="email" required v-model="email">
+
+    <label>Password</label>
+    <input type="password" required v-model="password">
+    <div v-if="passwordError" class="error">{{ passwordError }}</div>
+
+<label>Role:</label>
+<select v-model="role">
+<option value="Aspiring Pro Cyclist">Aspiring Pro Cyclist</option>
+<option value="Elite Cyclist">Elite Cyclist</option>
+</select>
+
+<div class="terms">
+  <input type="checkbox" v-model="terms" required />
+  <label>Accept terms and conditions</label>
 </div>
+  <div class="submit">
+    <button>Register</button>
+  </div>
+</form>
 </div>
-</div>
-</section>
+
+<p>Email: {{ email }}</p>
+<p>Password: {{ password }}</p>
+<p>Role: {{ role }}</p>
+<p>Terms accepted: {{ terms }}</p>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      contact: null,
-      name: "",
-      email: "",
-      message: "",
+      email: "Al",
+      password: "",
+      role: "Aspiring Pro Cyclist",
+      terms: false
     };
   },
-
   methods: {
-    handleSubmit() {
-      fetch("https://booking--system-coach-client.herokuapp.com/contact", {
-        method: "POST",
-        body: JSON.stringify({
-          name: this.name,
-          email: this.email,
-          message: this.message,
-        }),
-        headers: {
-          "Content-type": "application/json; charset=UTF-8",
-        },
-      })
-        .then((res) => res.json())
-        .then((data) => (this.contact = data))
-        .catch((err) => console.log(err.message));
+    addRole(e) {
+      if (e.key === "," && this.tempRole) {
+        if (!this.Role.includes(this.tempRole)) {
+          this.Role.push(this.Role)
+        }
+        this.Role = ""
+      }
     },
-  },
-};
+    deleteRole(role) {
+      this.Role = this.Role.filter((item) => {
+        return role !== item
+      })
+    },
+    handleSubmit() {
+      //validate pwd
+      this.passwordError =
+        this.password.length > 5 ?
+          "" : "Password must be at least 6 characters long."
+      if (!this.password) {
+        console.log("email: ", this.email);
+        console.log("password: ", this.password);
+        console.log("role: ", this.role);
+        console.log("terms accepted: ", this.terms);
+      }
+    }
+  }
+}
+ 
+    // handleSubmit() {
+    //   fetch("https://booking--system-coach-client.herokuapp.com/contact", {
+    //     method: "POST",
+    //     body: JSON.stringify({
+    //       name: this.name,
+    //       email: this.email,
+    //       message: this.message,
+    //     }),
+    //     headers: {
+    //       "Content-type": "application/json; charset=UTF-8",
+    //     },
+    //   })
+    //     .then((res) => res.json())
+    //     .then((data) => (this.contact = data))
+    //     .catch((err) => console.log(err.message));
+    // }
+
 </script>
 
 <style>
@@ -94,47 +140,14 @@ body {
   height: 100%;
   /* background-image: url(../assets/landing.jpeg); */
 }
-/* .layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 147, 173, 0,9);
-  overflow: auto;
-} */
-.form-data {
-  margin-top: 15%;
-  background-color: #FFF;
-}
-.form-body {
-  padding: 20px;
-}
-.form-head {
-  padding: 10px;
-  border-bottom: 1px solid #CCC;
-}
-.form-head h2 {
-  font-size: 22px;
-  font-weight: 600
-}
-.no-margin {
-margin: 0px;
-}
-.form-row {
-  margin-bottom: 15px;
-}
-.form-control{
-  background-color: #AAA;
-}
-.form-control:hover {
-box-shadow: none;
-border: 3px solid #c91407
-}
-.content {
-  margin-top: 15%;
-  text-align: center;
-  color: #FFF;;
-  padding: 30px;
-}
+
+
+ .content {
+   margin-top: 15%;
+   text-align: center;
+   color: #FFF;
+ /* padding: 30px; */
+ }
 .content h1{
   font-weight: 600;
   font-size: 3.5rem;
@@ -142,10 +155,6 @@ border: 3px solid #c91407
 @media screen and (max-width: 967px){
 
 }
-
-/* section {
-  height: 100vh;
-} */
 
 form {
   height: 480px;
@@ -197,17 +206,14 @@ input{
   color: rgb(197, 5, 5);
   cursor: pointer;
 }
-button {
-  background: rgb(197, 5, 5);
+.submit {
   /* border: ; */
-  padding: 20px 30px;
-  margin-top: 20px;
   color: white;
   border-radius: 20px;
+    text-align: center;
+
 }
-.submit {
-  text-align: center;
-}
+
 .error {
   color: #ff0062;
   margin-top: 10px;
@@ -215,15 +221,7 @@ button {
   font-weight: bold;
 }
 
-.mess {
-  width: 100%;
-}
-
-.but {
-  margin-left: 40%;
-  padding: 15px 29px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.register {
+  text-align: center;
 }
 </style>

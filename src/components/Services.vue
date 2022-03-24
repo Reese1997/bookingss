@@ -132,7 +132,7 @@ export default {
 }
 
 .service-wrap:hover {
-    background-image: url(https://i.ibb.co/mykzQks/services1.jpg);
+    background-image: url(https://images.unsplash.com/photo-1606224547099-b15c94ca5ef2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGN5Y2xpbmd8ZW58MHx8MHx8&w=1000&q=80);
     background-size: cover;
     background-position: center center;
     background-attachment: local;

@@ -6,23 +6,29 @@
      <form @submit.prevent="handleSubmit">
           <!-- <label class="h4 text-dark">Let's Get Started!</label> -->
               <h1 class="book">Book an appointment:</h1>
-    <br /><br />
-    <!-- <input type="First name" placeholder="First Name" /><br /><br />
-    <input type="Last name" placeholder="Last Name" /><br /><br /> -->
-    <input type="E-mail" placeholder="E-mail" /><br /><br />
-    <input type="Tel" placeholder="Tel" /><br /><br />
+    <br /><br /> 
+    <label>First Name</label>
+    <input type="name" required v-model="name">
+
+     <label>Last Name</label>
+    <input type="last" required v-model="last">
+
     <input type="Appointment Date" placeholder="Appointment Date" /><br /><br />
    
-    <!-- <button class="but" type="submit ">Send</button> -->
+<input type="time" v-model="mytime">
+<h1>{{ mytime }}</h1>
+<input type="date" v-model="mydate">
   </form>
     </div>
     <div class="col">
       <form @submit.prevent="handleSubmit">
     <h1 class="address">Address Details:</h1>
     <br /><br />
-    <input type="Enter Area" placeholder="Enter Area" /><br /><br />
-    <!-- <input type="Enter city" placeholder="Enter city" /><br /><br /> -->
-    <input type="Enter postal code" placeholder="Enter postal code" /><br /><br />
+     <label>Enter Area</label>
+    <input type="area" required v-model="area">
+
+     <label>Postal Code</label>
+    <input type="postal" required v-model="postal">
 
     <textarea class="mess" name="message"></textarea><br /><br />
 
@@ -44,13 +50,18 @@ export default {
   components: { },
   data() {
     return {
-      email: "",
       name: "",
+      last: "",
       role: "",
       terms: false,
     };
   },
-  
+  data() {
+return {
+mytime: null,
+mydate: null,
+};
+},
 
 methods: {
     handleSubmit() {

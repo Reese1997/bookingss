@@ -63,13 +63,13 @@ font-family: 'League Gothic', sans-serif;
 font-family: 'Smooch Sans', sans-serif;  -webkit-font-smoothing: antialiased; 
 	 border-bottom: dotted 2px black;
 	display: inline-block;
+	color: rgb(197, 5, 5);
 	margin: 100px 0 50px;
 }
 /* h2 { */
 	/* font-family: 'Euphoria Script'; */
 	/* font-size: 40px;
-} */ */ */
-
+} */ 
 /*class selector*/
 .margin {
 	margin: 50px 0;	
@@ -89,7 +89,8 @@ font-family: 'Smooch Sans', sans-serif;  -webkit-font-smoothing: antialiased;
 }
 #about-me-box {
 	margin: 50px 0;
-	background-color: #fff; 
+	background-color: rgb(5, 5, 5); 
+	color: white;
 	box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
 	display: block;
 	padding: 0 10px 0 0;

@@ -4,13 +4,17 @@
           <label class="h4 text-dark">Already a Member?</label>
               <h1 class="log">Log in:</h1>
     <br /><br />
-    <input type="First name" placeholder="First Name" /><br /><br />
-    <input type="Last name" placeholder="Last Name" /><br /><br />
-    <input type="E-mail" placeholder="E-mail" /><br /><br />
-    <input type="Tel" placeholder="Tel" /><br /><br />
+    <label>First Name</label>
+    <input type="name" required v-model="name">
+
+     <label>Last Name</label>
+    <input type="last" required v-model="last">
+
+     <label>Contact</label>
+    <input type="contact" required v-model="contact">
+
     <router-link :to="{ path: '/contact/' }"><button>LOG IN</button></router-link>
   </form>
-
 </section>
 </template>
 
@@ -18,10 +22,9 @@
 export default {
   data() {
     return {
-      contact: null,
       name: "",
-      email: "",
-      message: "",
+      last: "",
+      contact: null,
     };
   },
 
@@ -58,13 +61,7 @@ body {
   height: 100%;
   /* background-image: url(../assets/landing.jpeg); */
 }
-/* .layer {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 147, 173, 0,9);
-  overflow: auto;
-} */
+
 .form-label {
   margin-top: 15%;
   background-color: #FFF;
@@ -106,10 +103,6 @@ border: 3px solid #138496
 @media screen and (max-width: 967px){
 
 }
-
-/* section {
-  height: 100vh;
-} */
 
 form{
   height: 600px; 
@@ -175,10 +168,10 @@ button {
   font-size: 0.9em;
   font-weight: bold;
 }
-
+/* 
 .mess {
   width: 100%;
-}
+} */
 
 .but {
   margin-left: 46%;

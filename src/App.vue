@@ -1,6 +1,6 @@
 <template>
     <Navbar/>
-  <router-view/>
+  <!-- <router-view/> -->
   <Home/>
   <About/>
   <Services/>
@@ -25,7 +25,7 @@ import Footer from './components/Footer.vue'
 export default {
   name: "App",
   components: { Navbar, About, Services, Register, Login,
-    Contact, Bookings, Footer
+    Contact, Bookings, Footer, Home
   }
 }
 </script>
