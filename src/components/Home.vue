@@ -42,7 +42,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 * {
   font-family: 'Bebas Neue', cursive;
 font-family: 'League Gothic', sans-serif;
