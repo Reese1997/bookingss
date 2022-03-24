@@ -22,11 +22,11 @@
 								<div class="col-md-6 col-xs-12">
 
                   <div class="text-center"><h2>About Me</h2></div>
-									<p class="about-me">Hi! My name is Karina and this is True Cadence.
+									<p class="about-me">Hi! My name is Andy and this is True Cadence.
                     I am a qualified Personal Trainer and Sports Conditioning Coach.
                      I am a passionate Elite Cyclist, and I participate in local races.
                      I am passionate about getting an aspiring cyclist to where they want to be. 
-                      I hope you find something worth enjoying. </p>
+                       </p>
 								</div><!-- end col-md-5-->
 							</div><!--end row -->
 						</div><!-- end about-me-box -->

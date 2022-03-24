@@ -49,6 +49,7 @@ font-family: 'League Gothic', sans-serif;
 font-family: 'Smooch Sans', sans-serif;
   margin: 0;
   padding: 0;
+  font-size: 40px;
   /* background-image: url("../assets/landpage.jpeg"); */
 }
 .quote {
