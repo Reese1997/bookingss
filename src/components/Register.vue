@@ -29,95 +29,71 @@
 
 
 <div class="col-lg-6 col-md-6 col-sm-12">
-<form @submit.prevent="handleSubmit">
-          <label class="h4 text-dark">Let's Get Started:</label>
-              <h1 class="sign">Register:</h1>
-    <br /><br />
-    <label>Email</label>
-    <input type="email" required v-model="email">
-
-    <label>Password</label>
-    <input type="password" required v-model="password">
-    <div v-if="passwordError" class="error">{{ passwordError }}</div>
-
-<label>Role:</label>
-<select v-model="role">
-<option value="Aspiring Pro Cyclist">Aspiring Pro Cyclist</option>
-<option value="Elite Cyclist">Elite Cyclist</option>
-</select>
-
-<div class="terms">
-  <input type="checkbox" v-model="terms" required />
-  <label>Accept terms and conditions</label>
+<form @submit.prevent="register" class="form neu-border">
+    <h2 class="form-heading">Register</h2>
+    <input
+      class="form-input neu-border-inset"
+      type="text"
+      v-model="name"
+      placeholder="name"
+      required
+    />
+    <input
+      class="form-input neu-border-inset"
+      type="email"
+      v-model="email"
+      placeholder="Email"
+      required
+    />
+    <input
+      class="form-input neu-border-inset"
+      type="password"
+      v-model="password"
+      placeholder="Password"
+      required
+    />
+    <button type="submit" class="form-btn neu-border">Sign up</button>
+    
+  </form>
 </div>
-  <div class="submit">
-    <button>Register</button>
-  </div>
-</form>
-</div>
 
-<p>Email: {{ email }}</p>
-<p>Password: {{ password }}</p>
-<p>Role: {{ role }}</p>
-<p>Terms accepted: {{ terms }}</p>
 </template>
 
 <script>
 export default {
-  data() {
+ data() {
     return {
-      email: "Al",
+      name: "",
+      email: "",
       password: "",
-      role: "Aspiring Pro Cyclist",
-      terms: false
     };
   },
   methods: {
-    addRole(e) {
-      if (e.key === "," && this.tempRole) {
-        if (!this.Role.includes(this.tempRole)) {
-          this.Role.push(this.Role)
-        }
-        this.Role = ""
-      }
-    },
-    deleteRole(role) {
-      this.Role = this.Role.filter((item) => {
-        return role !== item
+    register() {
+      console.log(this.name, this.email, this.password);
+      fetch("https://booking--system-coach-client.herokuapp.com/users", {
+        method: "POST",
+        body: JSON.stringify({
+          name: this.name,
+          email: this.email,
+          password: this.password,
+        }),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
       })
+        .then((response) => response.json())
+        .then((json) => {
+          alert("User registered");
+          localStorage.setItem("jwt", json.jwt);
+          this.$router.push({ name: "Login" });
+        })
+        .catch((err) => {
+          alert(err);
+        });
     },
-    handleSubmit() {
-      //validate pwd
-      this.passwordError =
-        this.password.length > 5 ?
-          "" : "Password must be at least 6 characters long."
-      if (!this.password) {
-        console.log("email: ", this.email);
-        console.log("password: ", this.password);
-        console.log("role: ", this.role);
-        console.log("terms accepted: ", this.terms);
-      }
-    }
-  }
+  },
 }
- 
-    // handleSubmit() {
-    //   fetch("https://booking--system-coach-client.herokuapp.com/contact", {
-    //     method: "POST",
-    //     body: JSON.stringify({
-    //       name: this.name,
-    //       email: this.email,
-    //       message: this.message,
-    //     }),
-    //     headers: {
-    //       "Content-type": "application/json; charset=UTF-8",
-    //     },
-    //   })
-    //     .then((res) => res.json())
-    //     .then((data) => (this.contact = data))
-    //     .catch((err) => console.log(err.message));
-    // }
-
 </script>
 
 <style>

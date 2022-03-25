@@ -3,12 +3,23 @@
   <nav class="navbar" fixed="top">
     <a href="#"><img class="logo" src="../assets/true.png" alt="truecadence logo"></a>
     <ul id="ul-navigation" class="nav-ul" data-visible="false">
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Home'}">Home</router-link></li>
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'About'}">About</router-link></li>
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Services'}">Services</router-link></li>
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Register'}">Register</router-link></li>
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Login'}">Log in</router-link></li>
-      <li class="nav-li animate__animated animate__fadeInLeft"><router-link :to="{ name: 'Contact'}">Contact</router-link></li>
+      <li class="nav-li animate__animated animate__fadeInLeft">
+        <router-link to="/">Home</router-link>
+        </li>
+      <li class="nav-li animate__animated animate__fadeInLeft">
+        <router-link to="/about">About</router-link></li>
+      <li class="nav-li animate__animated animate__fadeInLeft">
+        <router-link to="/services">Services</router-link>
+        </li>
+      <li class="nav-li animate__animated animate__fadeInLeft">
+        <router-link :to="{ name: 'Register'}">Register</router-link>
+        </li>
+      <li class="nav-li animate__animated animate__fadeInLeft">
+        <router-link :to="{ name: 'Login'}">Log in</router-link>
+        </li>
+      <li class="nav-li animate__animated animate__fadeInLeft">
+        <router-link :to="{ name: 'Contact'}">Contact</router-link>
+        </li>
     </ul>
     
     <button class="mobile-toggle" aria-controls="ul-navigation" aria-expanded="false">
@@ -16,6 +27,11 @@
     </button>
   </nav>
 </header>
+
+
+
+
+
 
 </template>
 

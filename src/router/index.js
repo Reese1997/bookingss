@@ -7,9 +7,6 @@ import Login from '../components/Login.vue'
 import Contact from '../components/Contact.vue'
 import Bookings from '../components/Bookings.vue'
 
-import 'vue3-carousel/dist/carousel.css';
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
-
 const routes = [
   {
     path: '/',

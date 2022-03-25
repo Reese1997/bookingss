@@ -1,6 +1,7 @@
 <template>
+
     <Navbar/>
-  <!-- <router-view/> -->
+
   <Home/>
   <About/>
   <Services/>
@@ -8,19 +9,20 @@
   <Login/>
   <Bookings/>
   <Contact/>
-  <Footer/>
+  <Footer/> 
+   <!-- <router-view/> -->
 </template>
 
 <script>
-import Navbar from "../src/components/Navbar.vue"
-import Home from "../src/components/Home.vue"
-import About from './components/About.vue'
-import Services from './components/Services.vue'
-import Register from './components/Register.vue'
-import Login from './components/Login.vue'
-import Contact from './components/Contact.vue'
-import Bookings from './components/Bookings.vue'
-import Footer from './components/Footer.vue'
+import Navbar from '../src/components/Navbar.vue'
+import Home from '../src/components/Home.vue'
+import About from '../src/components/About.vue'
+import Services from '../src/components/Services.vue'
+import Register from '../src/components/Register.vue'
+import Login from '../src/components/Login.vue'
+import Contact from '../src/components/Contact.vue'
+import Bookings from '../src/components/Bookings.vue'
+import Footer from '../src/components/Footer.vue'
 
 export default {
   name: "App",

@@ -4,7 +4,7 @@
                 <div class="row">
                     <div class="col-xl-12 text-center mb-4">
                         <div class="service-title">
-                            <h4>Our Services</h4>
+                            <h4 class="serv">Our Services</h4>
                         </div>
                     </div>
                 </div>
@@ -14,8 +14,8 @@
                             <div class="service-icon">
                                 <i class="fas fa-layer-group"></i>
                             </div>
-                            <h4>Web Application</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p>
+                            <h4>Strength and conditioning</h4>
+<!-- <p>sports and conditioning</p> -->
                             <a href="#">Read More</a>
                         </div>
                     </div>
@@ -24,8 +24,8 @@
                             <div class="service-icon">
                                 <i class="far fa-chart-bar"></i>
                             </div>
-                            <h4>Highly customizable</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p>
+                            <h4>Mobility</h4>
+                            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p> -->
                             <a href="#">Read More</a>
                         </div>
                     </div>
@@ -34,8 +34,8 @@
                             <div class="service-icon">
                                 <i class="fas fa-database"></i>
                             </div>
-                            <h4>Responsive design</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p>
+                            <h4>High Cadence</h4>
+                            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p> -->
                             <a href="#">Read More</a>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                                 <i class="fas fa-cogs"></i>
                             </div>
                             <h4>service & plugins</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p>
+                            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p> -->
                             <a href="#">Read More</a>
                         </div>
                     </div>
@@ -54,8 +54,8 @@
                             <div class="service-icon">
                                 <i class="fas fa-chart-pie"></i>
                             </div>
-                            <h4>Optimised for speed</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p>
+                            <h4>Sports Periodization</h4>
+                            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p> -->
                             <a href="#">Read More</a>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                                 <i class="fas fa-thumbs-up"></i>
                             </div>
                             <h4>Dedicated support</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p>
+                            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry...</p> -->
                             <a href="#">Read More</a>
                         </div>
                     </div>
@@ -82,6 +82,9 @@ export default {
 </script>
 
 <style>
+.serv{
+    color: black;
+}
 .service-grid {
     background: #fcfcfc;
 }
@@ -132,7 +135,7 @@ export default {
 }
 
 .service-wrap:hover {
-    background-image: url(https://images.unsplash.com/photo-1606224547099-b15c94ca5ef2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGN5Y2xpbmd8ZW58MHx8MHx8&w=1000&q=80);
+    background-image: url("../assets/landpage.jpeg");
     background-size: cover;
     background-position: center center;
     background-attachment: local;

@@ -79,11 +79,11 @@
                             <div class="subscribe-form">
                                 <section class="links">
 <div class="rounded-social-buttons">
-                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="bx bxl-twitter"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="bx bxl-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram"></i></a>
                 </div>
 </section>
                             </div>
@@ -301,8 +301,6 @@ textarea {
   white-space: nowrap;
 }
 
-@charset "UTF-8";
-
 .svg-inline--fa {
   vertical-align: -0.200em;
 }
@@ -331,15 +329,6 @@ textarea {
   margin-bottom: 0.25rem;
 }
 
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
-  font-size: 25px;
-}
 
 .rounded-social-buttons .social-button.facebook {
   background: #3b5998;
