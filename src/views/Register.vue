@@ -53,10 +53,10 @@
       required
     />
     <button type="submit" class="form-btn neu-border">Sign up</button>
-    <p>Don't have an Account?<router-link :to="{name :'register'}"> 
+    <!-- <p class="reg">Don't have an Account?<router-link :to="{name :'Register'}"> 
              sign up
           </router-link> </p>
-    
+     -->
   </form>
 </div>
 
@@ -100,6 +100,9 @@ export default {
 </script>
 
 <style>
+.reg{
+  color: white
+}
 .sign{
   color: white;
 }

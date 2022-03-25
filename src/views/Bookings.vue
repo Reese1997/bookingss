@@ -98,6 +98,9 @@ methods: {
 .h4 {
 text-align: center;
 }
+h1{
+  color: white;
+}
 body {
   width: 100%;
   height: 100%;

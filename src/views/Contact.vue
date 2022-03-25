@@ -15,7 +15,7 @@
      <label>Contact</label>
     <input type="contact" required v-model="contact">
 
-    <router-link :to="{ path: '/contact/' }"><button>LOG IN</button></router-link>
+    <router-link :to="{ path: '/bookings/' }"><button>LOG IN</button></router-link>
     
   </form>
 
@@ -33,7 +33,7 @@ export default {
       name: "",
       last: "",
       email: "",
-      contact: null,
+      contact: 1,
       message: "",
     };
   },
