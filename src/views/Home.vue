@@ -18,14 +18,6 @@
 </div>
   </div>
 
-  					<!-- <div class="col-md-8 col-xs-12">
-	<img class="max-width-xs" src="https://flyclipart.com/art-black-and-white-kanye-kanye-west-graphic-transparent-graphic-kanye-face-png-902217" />
-								</div>end col-md-7 -->
-<!-- <div class="testing">
-<button>
-<router-link :to="{name:'Bookings'}" class="nav-link"> bookings</router-link>
-</button>
-</div> -->
   </div>
 
 

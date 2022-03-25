@@ -53,6 +53,9 @@
       required
     />
     <button type="submit" class="form-btn neu-border">Sign up</button>
+    <p>Don't have an Account?<router-link :to="{name :'register'}"> 
+             sign up
+          </router-link> </p>
     
   </form>
 </div>

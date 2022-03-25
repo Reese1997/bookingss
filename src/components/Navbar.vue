@@ -7,7 +7,8 @@
         <router-link to="/">Home</router-link>
         </li>
       <li class="nav-li animate__animated animate__fadeInLeft">
-        <router-link to="/about">About</router-link></li>
+        <router-link :to="{ name: 'About'}">About</router-link>
+      </li>
       <li class="nav-li animate__animated animate__fadeInLeft">
         <router-link to="/services">Services</router-link>
         </li>
@@ -27,11 +28,6 @@
     </button>
   </nav>
 </header>
-
-
-
-
-
 
 </template>
 
@@ -239,6 +235,8 @@ ul a:hover::after {
   top: 100%;
   background-color: rgb(197, 5, 5);
   transition: 0.1s linear;
+
+  border-radius: 7000px
 }
 .hero-button:hover {
   color: black;

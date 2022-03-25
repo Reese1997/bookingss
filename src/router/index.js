@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../components/Home.vue'
-import About from '../components/About.vue'
+import Home from '../views/Home.vue'
+import About from '../views/About.vue'
 import Services from '../components/Services.vue'
-import Register from '../components/Register.vue'
-import Login from '../components/Login.vue'
-import Contact from '../components/Contact.vue'
-import Bookings from '../components/Bookings.vue'
+import Register from '../views/Register.vue'
+import Login from '../views/Login.vue'
+import Contact from '../views/Contact.vue'
+import Bookings from '../views/Bookings'
+import Profile from '../views/Profile.vue'
 
 const routes = [
   {
@@ -45,6 +46,11 @@ const routes = [
     path: '/bookings',
     name: 'Bookings',
     component: Bookings
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: Profile
   },
 ]
 

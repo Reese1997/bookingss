@@ -14,6 +14,10 @@
     <input type="contact" required v-model="contact">
 
     <router-link :to="{ path: '/contact/' }"><button>LOG IN</button></router-link>
+
+    <p>Don't have an Account?<router-link :to="{name :'register'}"> 
+             sign up
+          </router-link> </p>
   </form>
 </section>
 </template>

@@ -1,4 +1,7 @@
 <template>
+<div v-if="contact">
+
+
 <section class="login">
 <form @submit.prevent="handleSubmit">
           <label class="h4 text-light">How can we help?</label>
@@ -9,14 +12,18 @@
 
      <label>Last Name</label>
     <input type="last" required v-model="last">
-
      <label>Contact</label>
     <input type="contact" required v-model="contact">
 
     <router-link :to="{ path: '/contact/' }"><button>LOG IN</button></router-link>
+    
   </form>
 
 </section>
+</div>
+<div v-else>
+loading contact...
+</div>
 </template>
 
 <script>
