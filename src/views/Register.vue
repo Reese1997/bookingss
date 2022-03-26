@@ -1,5 +1,5 @@
 <template>
-<section class="register">
+<section class="register animate__animated animate__slideInLeft">
   <div class="container">
     <div class="row no-margin">
       <div class="col-lg-6 col-md-6 col-sm-12">
@@ -101,7 +101,8 @@ export default {
 
 <style>
 .reg{
-  color: white
+  color: white;
+
 }
 .sign{
   color: white;
@@ -125,7 +126,7 @@ body {
 
 
  .content {
-   margin-top: 15%;
+   margin-top: 25%;
    text-align: center;
    color: #FFF;
  /* padding: 30px; */

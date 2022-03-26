@@ -1,11 +1,11 @@
 <template>
-<section class="login">
+<section class="login animate__animated animate__slideInLeft">
 <form @submit.prevent="handleSubmit">
           <label class="h4 text-dark">Already a Member?</label>
               <h1 class="log">Log in:</h1>
     <br /><br />
     <label>First Name</label>
-    <input type="name" required v-model="name">
+    <input type="name " required v-model="name">
 
      <label>Last Name</label>
     <input type="last" required v-model="last">
@@ -111,7 +111,7 @@ border: 3px solid #138496
 form{
   height: 600px; 
   max-width: 470px;
-  margin: 30px auto;
+  margin: 70px auto;
   background: white;
   text-align: left;
   padding: 50px;

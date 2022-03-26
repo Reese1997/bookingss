@@ -2,6 +2,7 @@
   <header>
   <nav class="navbar" fixed="top">
     <a href="#"><img class="logo" src="../assets/true.png" alt="truecadence logo"></a>
+    
     <ul id="ul-navigation" class="nav-ul" data-visible="false">
       <li class="nav-li animate__animated animate__fadeInLeft">
         <router-link to="/">Home</router-link>
@@ -154,7 +155,7 @@ ul a:hover::after {
   position: relative;
   font-size: 17px;
   font-weight: 600;
-  color: white;
+  color: rgb(197, 5, 5);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -166,7 +167,7 @@ ul a:hover::after {
   left: 0;
   height: 1px;
   width: 0%;
-  background-color: rgb(197, 5, 5);
+  background-color: white);
   transition: 0.3s ease;
 }
 .nav-li a:hover::after {

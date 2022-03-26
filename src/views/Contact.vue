@@ -1,8 +1,7 @@
 <template>
 <div v-if="contact">
 
-
-<section class="login">
+<section class="login animate__animated animate__slideInRight">
 <form @submit.prevent="handleSubmit">
           <label class="h4 text-light">How can we help?</label>
               <h1 class="log">Lets get in touch:</h1>
@@ -179,7 +178,7 @@ button {
   color: white;
   border-radius: 20px;
 }
-.submit {
+.login {
   text-align: center;
 }
 .error {

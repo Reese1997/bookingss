@@ -49,7 +49,7 @@ export default {
 
 img {
 	width: 100%;	
-}
+	}
 a {
 	text-decoration: none; 
 	color: white;

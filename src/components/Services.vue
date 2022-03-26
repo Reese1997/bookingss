@@ -8,7 +8,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row animate__animated animate__slideInLeft">
                     <div class="col-lg-4 col-md-6 text-center mb-3">
                         <div class="service-wrap">
                             <div class="service-icon">

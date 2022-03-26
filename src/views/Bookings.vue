@@ -1,10 +1,16 @@
 <template>
+
 <section class="contact">
 <div id="contact" class="container">
   <div class="row">
     <div class="col">
      <form @submit.prevent="handleSubmit">
           <!-- <label class="h4 text-dark">Let's Get Started!</label> -->
+          <atom-spinner
+  :animation-duration="1000"
+  :size="60"
+  color="#ff1d5e"
+/>
               <h1 class="book">Book an appointment:</h1>
     <br /><br /> 
     <label>First Name</label>
@@ -31,10 +37,7 @@
     <input type="postal" required v-model="postal">
 
     <textarea class="mess" name="message"></textarea><br /><br />
-
-    <!-- your other form fields go here -->
-    <button class="but" type="submit ">Send</button>
-    <!-- <button class="but2" type="Reset">Reset</button> -->
+    <router-link :to="{ path: '/profile/' }"><button>LOG IN</button></router-link>
  </form>
     </div>
   

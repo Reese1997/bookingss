@@ -24,6 +24,7 @@
   <div class="quote">
 <p>LIMITS 
 ONLY exist in the MIND...</p>
+
 </div>
 
 </template>
