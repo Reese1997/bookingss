@@ -101,7 +101,9 @@ export default {
 </script>
 
 <style>
-
+/* *{
+  padding-top: 5px;
+} */
 .reg{
   color: white;
 
@@ -118,6 +120,7 @@ p {
 }
 .register {
   min-height: 100vh;
+  padding-top: 40px;
 }
 body {
  background-color: black;    
