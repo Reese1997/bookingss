@@ -63,6 +63,8 @@ export default {
 body {
   width: 100%;
   height: 100%;
+    padding-top: 40px;
+
   /* background-image: url(../assets/landing.jpeg); */
 }
 
