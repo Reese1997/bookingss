@@ -12,23 +12,7 @@
           </p>
         </div>
       </div>
-    </div>
-  </div>  
-</section>
-      
-      <div class="col-sm-5">
-        <div class="form-data">
-
-        </div>
-        <div class="form-body">
-          <div class="row form-row">
-
-          </div>
-        </div>
-      </div>
-
-
-<div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="col-lg-6 col-md-6 col-sm-12">
 <form @submit.prevent="register" class="form neu-border">
     <h2 class="form-heading">Register</h2>
     <input
@@ -59,6 +43,23 @@
      -->
   </form>
 </div>
+    </div>
+  </div>  
+</section>
+      
+      <div class="col-sm-5">
+        <div class="form-data">
+
+        </div>
+        <div class="form-body">
+          <div class="row form-row">
+
+          </div>
+        </div>
+      </div>
+
+
+
 
 </template>
 
@@ -100,6 +101,7 @@ export default {
 </script>
 
 <style>
+
 .reg{
   color: white;
 

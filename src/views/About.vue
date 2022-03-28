@@ -17,7 +17,7 @@
 						<div id="about-me-box">
 							<div class="row">
 								<div class="col-md-6 col-xs-12">
-									<img class="max-width-xs" src="https://images.unsplash.com/photo-1606224547099-b15c94ca5ef2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGN5Y2xpbmd8ZW58MHx8MHx8&w=1000&q=80" />
+									<img class="max-width-xs" src="https://images.unsplash.com/flagged/photo-1576699070083-77444a0d1479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
 								</div><!-- end col-md-7 -->
 								<div class="col-md-6 col-xs-12">
 
